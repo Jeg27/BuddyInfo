@@ -23,5 +23,6 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy); // BREAKPOINT HERE
         addressBook.removeBuddy(0); // this comment is a change
+        // this comment is a change on github
     }
 }
