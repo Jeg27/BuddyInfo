@@ -22,6 +22,10 @@ public class AddressBook {
         return buddies;
     }
 
+    private String newMethod() {
+        return "words";
+    }
+
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
