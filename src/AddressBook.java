@@ -11,14 +11,17 @@ public class AddressBook {
         buddies.add(buddy);
     }
 
-    private void removeBuddy(BuddyInfo buddy) {
-        buddies.remove(buddy);
+    private BuddyInfo removeBuddy(int index) {
+        if (index >= 0 && index < buddies.size()) {
+            return buddies.remove(index);
+        }
+        return null;
     }
 
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
-        addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.addBuddy(buddy); // BREAKPOINT HERE
+        addressBook.removeBuddy(0); // need to print and test
     }
 }
