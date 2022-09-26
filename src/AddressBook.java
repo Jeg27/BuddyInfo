@@ -22,6 +22,6 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy); // BREAKPOINT HERE
-        addressBook.removeBuddy(0); // need to print and test
+        addressBook.removeBuddy(0); // this comment is a change
     }
 }
